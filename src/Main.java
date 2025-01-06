@@ -12,7 +12,7 @@ public class Main {
         for (int i = 0; i < dataPoints.length; i++) {
             dataPoints[i] = (int) (Math.random() * 100) + 1;
         }
-        for (int i = 0; i < dataPoints.length; i++) { //this loop can be combined with prior loop but instructions said make a second loop ¯\_(ツ)_/¯
+        for (int i = 0; i < dataPoints.length; i++) {
             System.out.print(dataPoints[i] + " | ");
         }
 
@@ -58,7 +58,7 @@ public class Main {
         return highest;
     }
 
-    public static int occurenceScan(int[] values, int target){ //in the instructions this was supposed to find how many times the user's number was in the array but part 2 doesn't need that, it needs the index number of the first time that number occurs if it occurs so that is what I am using it as
+    public static int occurenceScan(int[] values, int target){
         int occurAmount = 0;
         for (int i = 0; i < values.length; i++) {
             if (values[i] == target) {
